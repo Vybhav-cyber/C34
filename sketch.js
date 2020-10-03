@@ -11,23 +11,17 @@ function setup(){
 }
 
 function draw(){
-    background("white");
-    if(keyDown(LEFT_ARROW)){
-        //changePosition(-1,0);
+    background(46, 139, 87);
+
+    if(position != undefined){
+        
+      if(LEFT_ARROW){
         writePosition(-1,0);
+      }
+
     }
-    else if(keyDown(RIGHT_ARROW)){
-        //changePosition(1,0);
-        writePosition(1,0);  
-    }
-    else if(keyDown(UP_ARROW)){
-        //changePosition(0,-1);
-        writePosition(0,-1);
-    }
-    else if(keyDown(DOWN_ARROW)){
-        //changePosition(0,+1);
-        writePosition(0,+1);
-    }
+
+
     drawSprites();
 }
 
